@@ -1,0 +1,38 @@
+Executing checkItemOnHistoryTable method...
+Constructed Locator: xpath=//div[@id='historyTable']//*[text()='Coal dust']
+Executing assertElementExists function...
+Coal dust is not present.
+assertElementExists function executed successfully.
+checkItemOnHistoryTable method executed successfully.
+Successfully stored results into JSON: SQLResults/PatientDomain/PatientAudit.json
+The JSON data is as below [
+  {
+    "paa_id": 72569,
+    "paa_usa_id": null,
+    "paa_use_username": "manoj.auto",
+    "paa_pat_id": 787815,
+    "paa_est_id": 4,
+    "paa_viewed": "01/07/2024",
+    "paa_type": "selected"
+  }
+]
+
+ Patient Details stored into the database: 
+ [
+  RowDataPacket {
+    paa_id: 72569,
+    paa_usa_id: null,
+    paa_use_username: 'manoj.auto',
+    paa_pat_id: 787815,
+    paa_est_id: 4,
+    paa_viewed: 2024-06-30T23:05:28.000Z,
+    paa_type: 'selected'
+  }
+]
+Patient Accessed by User:787815
+Waiting for searchLocator...
+Filling searchLocator with: Coal dust
+Waiting for itemLocator...
+Found itemLocator: getByRole('option', { name: 'Coal dust' })
+Waiting for itemLocator to be visible...
+itemLocator is visible, clicking...

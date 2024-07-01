@@ -6,7 +6,7 @@ const XLSX = require('xlsx');
 const path = 'C:/Riomed/Cellma4Automation'
 
 module.exports = async config => {
-  const browser=await chromium.launch({headless:false})
+  //const browser=await chromium.launch({headless:false})
   const page=await browser.newPage()
 //Excel to JSON Convertor for patient
   const workbook = XLSX.readFile('./ExcelFiles/PatientDomain.xlsx');
