@@ -17,6 +17,6 @@ module.exports = async config => {
     fs.writeFileSync(path + '/TestDataWithJSON/PatientDomain/PatientDetails.json', JSON.stringify(jsonData, null, 2));
   });
   console.log('Excel data has been converted and saved to excel_data.json');
-  await browser.close()
+ // await browser.close()
   }
 
