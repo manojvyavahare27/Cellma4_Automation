@@ -13,7 +13,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   globalSetup: require.resolve("./config/global-setup"),
   testDir: './tests',
-  
+  testMatch: ['./tests/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.j'],
 
   /* Maximum time one test can run for. */
   timeout: 600 * 1000,
