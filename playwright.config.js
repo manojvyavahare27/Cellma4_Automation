@@ -32,7 +32,8 @@ module.exports = defineConfig({
   //reporter: 'html',
   // reporter: 'html',
   reporter: [ ['html'],
-              ['allure-playwright',{outputFolder: 'allure-result'}]
+              ['allure-playwright', { outputFolder: 'allure-results' }]
+            //  ['allure-playwright',{outputFolder: 'allure-result'}]
 
             ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
