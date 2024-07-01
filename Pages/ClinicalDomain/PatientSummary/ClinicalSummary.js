@@ -99,7 +99,6 @@ class ClinicalSummary {
 
 //////////////////////// STATIC METHODS USED TO CLICK ON DYNAMICALLY CREATED LOCATORS /////////////////
 
-
     async clickOnAllItemsSection(){
         await showClinicalItemByStatus(this.page, 'All');
     }
