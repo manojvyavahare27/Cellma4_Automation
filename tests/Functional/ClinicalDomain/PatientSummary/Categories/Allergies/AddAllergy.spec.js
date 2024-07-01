@@ -218,6 +218,7 @@ sqlQuery="select pacr_id, pacr_category, pacr_que_name, pacr_clinic_date, pacr_r
 
       //await allergyExtraDetails.enterClinicalItemNotes("Updated Allergy Notes From Playwright");
      // await page.pause()
+     
       await allergyExtraDetails.clickOnSave();
       await page.waitForTimeout(1000);
       await expect(page.getByText('Allergy Record Updated Successfully')).toHaveText('Allergy Record Updated Successfully')
