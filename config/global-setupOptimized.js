@@ -23,8 +23,8 @@ var flag=false;
 
 
 async function convertExcelToJson(excelFilePath, jsonFilePath) {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
+  // const browser = await chromium.launch();
+  // const page = await browser.newPage();
 
 //Excel to JSON Convertor for patient
   if(excelFilePath){
@@ -38,7 +38,7 @@ async function convertExcelToJson(excelFilePath, jsonFilePath) {
     console.log('Excel data has been converted and saved to excel_data.json');
     flag=true
   }
-  await browser.close()
+  //await browser.close()
   return flag
 }
 
