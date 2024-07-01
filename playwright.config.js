@@ -13,7 +13,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   globalSetup: require.resolve("./config/global-setup"),
   testDir: './tests',
-  testMatch: ['./tests/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.js'], // Corrected the file extension
+  testMatch: ['**/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.js'], // Corrected the file extension
   timeout: 600 * 1000,
   expect: {
     timeout: 8000,
