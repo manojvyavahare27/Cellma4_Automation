@@ -101,7 +101,7 @@ test.describe("Diagnosis Category", () => {
       //await patientsearch.selectBornDate(formattedDate);
       await patientsearch.clickOnSearchButton();
      
-      await page.pause()
+     // await page.pause()
       await patientsearch.clickOnSearchPatientLink();
       await page.waitForTimeout(1500);
       await confirmexisting.clickOnConfirmExistingDetails();     
@@ -117,11 +117,11 @@ test.describe("Diagnosis Category", () => {
        await page.waitForTimeout(2000)
        await contacthistory.clickOnSettingButton()
        await contacthistory.clickOnCustomizableView()
-       await page.pause()
+       //
       // await clinicalSummary.clickOnFavouritesCustView(jsonData.AddDiagnosis[index].remove_favourites)
       // await contacthistory.
 
-       await page.pause()
+       //await page.pause()
 
 
       await diagnosis.clickOnViewContactItemsMenu();
