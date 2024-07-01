@@ -108,7 +108,7 @@ test.describe("Interpretations Category", () => {
       await contacthistory.clickOnAddContact();
       await Interpretations.clickOnViewContactItemsMenu();
       await Interpretations.clickOnPinContactItemsMenu();
-      await Interpretations.selectCategoryFromList("Interpretation");
+      await Interpretations.selectCategoryFromList("Interpretations");
       await page.waitForTimeout(2000)
 
        ////////REVIEW EXISTING ITEM AND DELETE/////
