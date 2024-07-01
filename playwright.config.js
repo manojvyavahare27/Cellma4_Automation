@@ -13,16 +13,10 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   globalSetup: require.resolve("./config/global-setup"),
   testDir: './tests',
-  testMatch: ['./tests/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.j'],
-
-  /* Maximum time one test can run for. */
+  testMatch: ['./tests/Functional/ClinicalDomain/PatientSummary/Categories/Medication/AddMedi.spec.js'], // Corrected the file extension
   timeout: 600 * 1000,
   expect: {
-    /**
-     * Maximum time expect() should wait for the condition to be met.
-     * For example in `await expect(locator).toHaveText();`
-     */
-    timeout: 8000
+    timeout: 8000,
   },
   /* Run tests in files in parallel */
   fullyParallel: false,
